@@ -152,9 +152,7 @@ body {
 }
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   font-family: 'Rubik', sans-serif;
 }
 h1 {
@@ -167,6 +165,7 @@ h2 {
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -255,14 +254,17 @@ header .nav2 .btn {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .title {
+.home .introduction {
   border-bottom: 2px solid black;
 }
-.home .title h2 {
+.home .introduction .intro-caption {
+  padding: 2em 0;
+}
+.home .introduction h2 {
   margin-top: 0.5em;
 }
-.home .title p {
-  margin-bottom: 0.5em;
+.home .introduction h4 {
+  margin: 0.5em 0;
 }
 .home .content-section {
   margin: 6em 0;
