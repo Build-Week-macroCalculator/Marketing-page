@@ -10,3 +10,5 @@ accordion.forEach(function(value){
             content.style.maxHeight = content.scrollHeight + "px";
         }
     }})
+
+    console.log(accordion);

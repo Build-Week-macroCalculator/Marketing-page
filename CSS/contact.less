@@ -19,6 +19,7 @@ a{
 }
 h1,h2,h3,h4,h5,h6{
     line-height: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 p{
     line-height: 1.4rem;
@@ -35,6 +36,9 @@ p{
     background-image: @mainColor;
     font-weight: 700;
     font-size: 0.8rem;
+    &:hover{
+        background: @hoverColor;
+    }
 }
 
 
@@ -121,10 +125,10 @@ header{
         background: #1089ff;
         text-align: center;
         padding: 1rem;
+        border: 2px whitesmoke solid;
         font-size: 1.2rem;
         border-radius: 0.2rem;
         color: white;
-        margin: 0.3rem 0;
         font-weight: 600;
         cursor: pointer;
         &:hover{
@@ -134,6 +138,7 @@ header{
     .accordion-content{
         font-size: 1.1rem;
         width: 80%;
+        border: 1px whitesmoke solid;
         background: whitesmoke;
         text-align: start;
         max-height: 0;
@@ -145,3 +150,27 @@ header{
     }
 }
 
+
+///////////////// CONTACT ////////////////////////
+.contact-section{
+    border: 1px red solid;
+    margin: 5rem;
+    h2{
+        text-align: center;
+        color: black;
+        font-size: 3rem;
+        font-style: uppercase;
+    }
+    form{
+        display: flex;
+        border:1px red solid;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto;
+        input{
+            width: 100%;
+        }
+    }
+}

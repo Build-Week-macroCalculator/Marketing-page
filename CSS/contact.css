@@ -19,6 +19,7 @@ h4,
 h5,
 h6 {
   line-height: 1.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 p {
   line-height: 1.4rem;
@@ -30,6 +31,9 @@ p {
   background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
   font-weight: 700;
   font-size: 0.8rem;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
 }
 header {
   max-width: 1500px;
@@ -105,10 +109,10 @@ header .nav2 .btn {
   background: #1089ff;
   text-align: center;
   padding: 1rem;
+  border: 2px whitesmoke solid;
   font-size: 1.2rem;
   border-radius: 0.2rem;
   color: white;
-  margin: 0.3rem 0;
   font-weight: 600;
   cursor: pointer;
 }
@@ -118,6 +122,7 @@ header .nav2 .btn {
 .container2 .accordion-content {
   font-size: 1.1rem;
   width: 80%;
+  border: 1px whitesmoke solid;
   background: whitesmoke;
   text-align: start;
   max-height: 0;
@@ -126,4 +131,26 @@ header .nav2 .btn {
 }
 .container2 .accordion-content p {
   padding: 0 1rem;
+}
+.contact-section {
+  border: 1px red solid;
+  margin: 5rem;
+}
+.contact-section h2 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-style: uppercase;
+}
+.contact-section form {
+  display: flex;
+  border: 1px red solid;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contact-section form input {
+  width: 100%;
 }
