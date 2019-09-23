@@ -168,6 +168,12 @@ h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
+a {
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -187,40 +193,57 @@ img {
     max-width: 450px;
   }
 }
-.nav-bar {
-  border-bottom: 2px solid black;
-}
-.nav-bar .navigation {
+header {
   max-width: 80%;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: auto;
-  padding: 2em 0;
-}
-@media (max-width:500px) {
-  .nav-bar .navigation {
-    max-width: 500px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.nav-bar .navigation nav {
-  display: flex;
   justify-content: space-around;
-  width: 40%;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 3rem auto;
 }
-@media (max-width:500px) {
-  .nav-bar .navigation nav {
-    width: 100%;
-    margin-top: 1em;
-  }
+header .logo {
+  display: flex;
+  width: 33%;
+  background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+  font-size: 1rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: flex-start;
 }
-.nav-bar .navigation a {
-  text-decoration: none;
-  color: #212529;
-  line-height: 1.5;
-  font-size: 1.6rem;
+header .logo h1 {
+  margin: 0;
+}
+header .nav1 {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+header .nav1 a {
+  margin: 0 2rem;
+  color: grey;
+}
+header .nav2 {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .nav2 a {
+  margin: 0 1rem;
+  color: grey;
+}
+header .nav2 .btn {
+  margin: 0 1rem;
+  color: white;
+  margin-bottom: 0.5em;
+}
+.btn {
+  padding: 1rem 3rem;
+  color: white;
+  border-radius: 1.5rem 0 1.5rem 0;
+  background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
 }
 .footer {
   width: 100%;
@@ -232,13 +255,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
+.home .title {
   border-bottom: 2px solid black;
 }
-.home header h2 {
+.home .title h2 {
   margin-top: 0.5em;
 }
-.home header p {
+.home .title p {
   margin-bottom: 0.5em;
 }
 .home .content-section {

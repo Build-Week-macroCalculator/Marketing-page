@@ -1,34 +1,57 @@
 // Navigation Styles here
 
-.nav-bar {
-    border-bottom: 2px solid black;
-    .navigation {
-        max-width: 80%;
+header{
+    max-width: 80%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: @header-font;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 3rem auto;
+    .logo{
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        margin: auto;
-        padding: 2em 0;
-        @media @phone {
-            max-width: 500px;
-            flex-direction: column;
-            align-items: center;
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            width: 40%;
-            @media @phone {
-                width: 100%;
-                margin-top: 1em;
-            }
-        }
-        a {
-            text-decoration: none;
-            color: @shark;
-            line-height: 1.5;
-            font-size: 1.6rem;
+        width: 33%;
+        background: @mainColor;
+        font-size: 1rem;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        justify-content: flex-start;
+        h1{
+            margin: 0;
         }
     }
+    .nav1{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        a{
+            margin: 0 2rem;
+            color: grey;
+        }
+        
+    }
+    .nav2{
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            margin: 0 1rem;
+            color: grey;
+        }
+        .btn{
+            margin: 0 1rem;
+            color: white;
+            margin-bottom: .5em;
+        }
+    }
+}
+
+.btn{
+    padding: 1rem 3rem;
+    color: white;
+    border-radius: 1.5rem 0 1.5rem 0;
+    background-image: @mainColor;
 }
 
