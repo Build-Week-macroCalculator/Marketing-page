@@ -177,7 +177,7 @@ footer .footerabout p {
 footer .footerabout .abouticons {
   font-size: 3.2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 1.6rem;
 }
 @media (max-width: 1180px) {
@@ -187,6 +187,12 @@ footer .footerabout .abouticons {
 }
 footer .footerabout .abouticons i {
   color: white;
+  padding-right: 3rem;
+}
+@media (max-width: 1180px) {
+  footer .footerabout .abouticons i {
+    padding-right: 0;
+  }
 }
 footer .footernav {
   display: flex;
@@ -194,6 +200,7 @@ footer .footernav {
   width: 10%;
   padding: 3.2rem 0;
   margin-right: 1.6rem;
+  text-align: center;
 }
 @media (max-width: 1180px) {
   footer .footernav {
@@ -223,6 +230,7 @@ footer .footerlegal {
   flex-direction: column;
   width: 10%;
   padding: 3.2rem 0;
+  text-align: center;
 }
 @media (max-width: 1180px) {
   footer .footerlegal {
@@ -295,6 +303,7 @@ footer .footersignup form .btnn {
   border: 3px white solid;
   color: white;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 footer .footersignup p {
   font-style: italic;
