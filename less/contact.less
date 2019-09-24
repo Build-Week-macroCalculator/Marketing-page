@@ -4,10 +4,7 @@
 
 @bigtablet: ~"(max-width: 1180px)";
 @tablet: ~"(max-width: 800px)";
-@phone: ~"(max-width: 500px)";
-
-
-
+@phone: ~"(max-width: 700px)";
 
 //UNIVERSAL
 *{
@@ -80,6 +77,7 @@ header{
             order:1;
             justify-content: center;
         }
+
         @media @phone{
             width: 100%;
         }
@@ -213,9 +211,6 @@ header{
     max-width: 1550px;
     @media @bigtablet {
         width: 100%;
-    }
-
-    @media @tablet {
         border-radius: 0;
     }
     @media @phone{
