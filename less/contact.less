@@ -1,145 +1,9 @@
-//VARIABLES 
-@mainColor: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
-@hoverColor: linear-gradient( 135deg, #3C8CE7 40%, #00EAFF 100%);
-
-@bigtablet: ~"(max-width: 1180px)";
-@tablet: ~"(max-width: 800px)";
-@phone: ~"(max-width: 700px)";
-
-
-//mixins
-.textgradient(){
-    background: @mainColor;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-
-
-//UNIVERSAL
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 62.5%;
-    background: #f3f3f3;
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: #333;
-}
-h1,h2,h3,h4,h5,h6{
-    line-height: 1.7rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-p{
-    line-height: 1.4rem;
-}
-
-
-//Classes
-
-
-.btn{
-    padding: 1rem 3rem;
-    color: white;
-    border-radius: 1.5rem;
-    background-image: @mainColor;
-    font-weight: 700;
-    font-size: 0.8rem;
-    &:hover{
-        background: @hoverColor;
-    }
-}
-
-
-header{
-    max-width: 1500px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin: 3rem auto;
-    @media @bigtablet{
-        flex-wrap: wrap;
-    }
-    @media @phone{
-        margin: 1rem 0;
-    }
-    .logo{
-        display: flex;
-        width: 33%;
-        font-size: 1rem;
-        color: #333;
-        justify-content: flex-start;
-        @media @bigtablet{
-            width: 50%;
-            order:1;
-            justify-content: center;
-        }
-
-        @media @phone{
-            width: 100%;
-        }
-        h1{
-            margin-left: 1rem;
-        }
-    }
-    .nav1{
-        width: 33%;
-        display: flex;
-        justify-content: center;
-        @media @bigtablet{
-            width: 100%;
-            order: 3;
-            margin-top: 3rem;
-            text-align: center;
-            background: @mainColor;
-            padding: 1rem;
-        }
-        @media @phone{
-            margin-top: 1rem;
-        }
-        a{
-            width: 33%;
-            margin: 0 2rem;
-            @media @bigtablet{
-                color: white;
-            }
-        }
-    }
-    .nav2{
-        width: 33%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        @media @bigtablet{
-            width: 50%;
-            order: 2;
-            justify-content: center;
-        }
-        @media @phone{
-            width: 100%;
-            margin-top: 1rem;
-        }
-        a{
-            margin: 0 2rem;
-        }
-        .btn{
-            margin-right: 1rem;
-        }
-    }
-
-}
-
+@import "nav";
+@import "footer";
+@import "variables";
+@import "mixins";
+@import "pedroreset";
+@import "classes";
 
 
 //// HEADING /////
@@ -152,7 +16,7 @@ header{
     h1{
         font-size: 3rem;
         margin: 5rem 0;
-        @media @phone{
+        @media @bigtablet{
             line-height: 3rem;
             margin: 2rem 0;
         }
@@ -169,6 +33,9 @@ header{
     h2{
         font-size: 2rem;
         color: #333;
+        @media @tablet{
+            background: red;
+        }
     }
     button{
         border: none;
@@ -185,8 +52,11 @@ header{
         &:hover{
             background: @hoverColor;
         }
-        @media @phone{
+        @media @tablet{
             width: 100%;
+        }
+        @media @phone{
+            height: 5rem;
         }
     }
     .accordion-content{
@@ -295,112 +165,3 @@ header{
 
 
 
-
-////////////////// FOOTER ///////////////////////////
-footer{
-    margin-top: 5rem;
-    display: flex;
-    background: @mainColor;
-    height: 15rem;
-    align-items: flex-start; 
-    justify-content: space-around;
-    .footerabout{
-        width: 20%;
-        padding: 2rem;
-
-        h2{
-            font-size: 2rem;
-            line-height: 1.5;
-            color: white;
-        }
-        p{
-            font-size: 1rem;
-            color: white;
-
-        }
-        .abouticons{
-            font-size: 2rem;
-            text-align: left;
-            i{
-                margin: 0 1rem;
-                color: white;
-            }
-        }
-    }
-
-    .footernav{
-        display: flex;
-        flex-direction: column;
-        width: 10%;
-        padding: 2rem;
-        h2{
-            font-size: 2rem;
-            line-height: 1.5;
-            color: white;
-        }
-        a{
-            font-size: 1rem;
-            color: white;
-            font-weight: 500;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-        
-    }
-
-    .footerlegal{
-        display: flex;
-        flex-direction: column;
-        width: 10%;
-        padding: 2rem;
-        h2{
-            font-size: 2rem;
-            line-height: 1.5;
-            color: white;
-        }
-        a{
-            font-size: 1rem;
-            color: white;
-            font-weight: 500;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .footersignup{
-        display: flex;
-        width: 30%;
-        flex-direction: column;
-        padding: 2rem;
-        h2{
-            font-size: 2rem;
-            line-height: 1.2;
-            color: white;
-        }
-        form{
-            width: 100%;
-            margin-top: 1rem;
-            input{
-                padding: 0.3rem;
-                width: 60%;
-            }
-            .btnn{
-                border-radius: 0.3rem;
-                padding: 0.3rem 2rem;
-                cursor:pointer;
-                overflow: hidden;
-                background-color: transparent;
-                background-repeat:no-repeat;
-                border: 3px white solid;
-                color: white;
-                font-weight: 700;
-            }
-        }
-        p{
-            font-style: italic;
-            font-size: 0.8rem;
-        }
-    }
-}
