@@ -1,7 +1,9 @@
-body {
-  margin: 0 auto;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 62.5%;
   background: #f3f3f3;
@@ -85,6 +87,7 @@ header .nav2 .btn {
 }
 .heading h1 {
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .container2 {
   display: flex;
@@ -142,6 +145,7 @@ header .nav2 .btn {
   color: white;
   font-size: 3rem;
   font-style: uppercase;
+  margin: 2rem 0;
 }
 .contact-section .form form {
   display: flex;
