@@ -277,6 +277,8 @@ header .nav1 {
 @media (max-width:500px) {
   header .nav1 {
     margin: 1.6rem auto;
+    background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+    border: none;
   }
 }
 header .nav1 a {
@@ -293,6 +295,11 @@ header .nav1 a:hover {
     height: 100%;
     padding: 0;
     color: #333;
+  }
+}
+@media (max-width:500px) {
+  header .nav1 a {
+    color: white;
   }
 }
 header .nav2 {
@@ -334,15 +341,171 @@ header .nav2 .btn {
   margin-bottom: 0.5em;
   margin-right: 1.6rem;
 }
-.footer {
-  width: 100%;
-  background: #DCDCDC;
+footer {
+  margin-top: 8rem;
+  display: flex;
+  background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+  align-items: space-around;
+  justify-content: space-around;
 }
-.footer p {
-  text-align: center;
-  color: black;
+@media (max-width: 1180px) {
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+footer .footerabout {
+  width: 30%;
+  padding: 3.2rem;
+}
+@media (max-width: 1180px) {
+  footer .footerabout {
+    width: 80%;
+  }
+}
+footer .footerabout h2 {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: white;
+}
+footer .footerabout p {
   font-size: 1.6rem;
-  padding: 20px;
+  color: white;
+}
+footer .footerabout .abouticons {
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 1.6rem;
+}
+@media (max-width: 1180px) {
+  footer .footerabout .abouticons {
+    justify-content: space-evenly;
+  }
+}
+footer .footerabout .abouticons i {
+  color: white;
+  padding-right: 3rem;
+}
+@media (max-width: 1180px) {
+  footer .footerabout .abouticons i {
+    padding-right: 0;
+  }
+}
+footer .footernav {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding: 3.2rem 0;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  footer .footernav {
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  footer .footernav {
+    width: 80%;
+  }
+}
+footer .footernav h2 {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: white;
+}
+footer .footernav a {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+footer .footernav a:hover {
+  text-decoration: underline;
+}
+footer .footerlegal {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  padding: 3.2rem 0;
+  text-align: center;
+}
+@media (max-width: 1180px) {
+  footer .footerlegal {
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  footer .footerlegal {
+    width: 100%;
+  }
+}
+footer .footerlegal h2 {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: white;
+}
+footer .footerlegal a {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  width: 100%;
+}
+footer .footerlegal a:hover {
+  text-decoration: underline;
+}
+footer .footersignup {
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem;
+  align-items: flex-end;
+}
+@media (max-width: 1180px) {
+  footer .footersignup {
+    width: 80%;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  footer .footersignup {
+    width: 100%;
+  }
+}
+footer .footersignup h2 {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: white;
+}
+footer .footersignup form {
+  width: 100%;
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 1180px) {
+  footer .footersignup form {
+    justify-content: center;
+  }
+}
+footer .footersignup form input {
+  padding: 0.6rem;
+  width: 60%;
+}
+footer .footersignup form .btnn {
+  border-radius: 0.2rem;
+  padding: 0.6rem 3.2rem;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 3px white solid;
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+footer .footersignup p {
+  font-style: italic;
+  font-size: 1.5rem;
 }
 .home .introduction {
   border-bottom: 2px solid black;
@@ -418,6 +581,25 @@ header .nav2 .btn {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+.about-us .content-section {
+  text-align: center;
+  margin-bottom: 5rem;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.about-us .content-section h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.about-us .content-section p {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 300;
 }
 .about-us a {
   text-decoration: none;
