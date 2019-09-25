@@ -507,6 +507,12 @@ footer .footersignup p {
   font-style: italic;
   font-size: 1.5rem;
 }
+.home {
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
 .home .introduction {
   border-bottom: 2px solid black;
 }
@@ -522,13 +528,20 @@ footer .footersignup p {
 .home .content-section {
   margin: 6em 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
+  height: 40em;
 }
 @media (max-width: 800px) {
   .home .content-section {
-    flex-direction: column;
-    align-items: center;
+    height: 60em;
+  }
+}
+@media (max-width:500px) {
+  .home .content-section {
+    height: 55em;
   }
 }
 .home .content-section .text-content {
@@ -551,6 +564,7 @@ footer .footersignup p {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  max-height: 40em;
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -558,7 +572,7 @@ footer .footersignup p {
 }
 @media (max-width: 800px) {
   .home .inverse-content {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .home .inverse-content .text-content {
@@ -569,18 +583,75 @@ footer .footersignup p {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
+.home .slides {
+  display: none;
 }
-@media (max-width: 800px) {
-  .home .content-destination {
-    width: 100%;
-    justify-content: center;
+.home .arrows {
+  display: flex;
+  justify-content: space-between;
+}
+.home .prev,
+.home .next {
+  width: auto;
+  padding: 0.5em;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3s ease;
+  user-select: none;
+}
+.home .prev {
+  border-radius: 0.5em 0 0 0.5em;
+}
+.home .next {
+  border-radius: 0 0.5em 0.5em 0;
+}
+.home .prev:hover,
+.home .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.home .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.home .active,
+.home .dot:hover {
+  background-color: #717171;
+}
+.home .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
-.home .content-destination img {
-  border-radius: 10px;
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .about-us .content-section {
   text-align: center;
