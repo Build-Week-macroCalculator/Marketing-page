@@ -1,4 +1,10 @@
 // Navigation Styles here
+.btn{
+    padding: 1rem 3rem;
+    color: white;
+    border-radius: 3.2rem;
+    background-image: @mainColor;
+}
 
 header{
     max-width: 80%;
@@ -6,18 +12,40 @@ header{
     justify-content: space-around;
     align-items: center;
     font-family: @header-font;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    margin: 3rem auto;
+    margin: 4.8rem auto;
+    @media @bigtablet{
+        width:100%;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+    }
+    @media @tablet{
+        max-width:100%;
+    }
+    @media @phone{
+        max-width:100%;
+        margin: 1.6rem 0;
+    }
     .logo{
         display: flex;
         width: 33%;
-        background: @mainColor;
-        font-size: 1rem;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #333;
+        font-size: 1.6rem;
         justify-content: flex-start;
+        @media @bigtablet{
+            width: 50%;
+            order:1;
+        }
+        @media @tablet{
+            width: 50%;
+            justify-content: center;
+        }
+        @media @phone{
+            width: 100%;
+        }
         h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0;
         }
     }
@@ -25,33 +53,67 @@ header{
         width: 33%;
         display: flex;
         justify-content: center;
-        a{
-            margin: 0 2rem;
-            color: grey;
+        align-items: center;
+        @media @bigtablet{
+            order: 3;
+            margin-top: 1rem;
+            text-align: center;
+            border-top: 2px #333 solid;
+            border-bottom: 2px #333 solid;
+            padding: 1.6rem 0;
+            margin: 0 auto;
+            width:100%;
+            margin-bottom: 3rem;
         }
-        
-    }
+        @media @phone{
+            margin: 1.6rem auto;
+        }
+        a{
+            width: 33%;
+            margin: 0 auto;
+            text-align: center;
+            color: #333;
+            &:hover{
+                text-decoration: underline;
+            }
+            @media @bigtablet{
+                height:100%;
+                padding: 0;
+                color: #333;
+            }
+        }
+}
     .nav2{
         width: 33%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        @media @bigtablet{
+            width: 50%;
+            order: 2;
+        }
+        @media @tablet{
+            width: 50%;
+            justify-content: center;
+        }
+        @media @phone{
+            width: 100%;
+            margin-top: 0;
+            justify-content: center;
+        }
         a{
-            margin: 0 1rem;
-            color: grey;
+            margin: 0 3.2rem;
+            color: #333;
+            @media @bigtablet{
+                margin: 0 1rem;
+            }
         }
         .btn{
-            margin: 0 1rem;
             color: white;
             margin-bottom: .5em;
+            margin-right: 1.6rem;
         }
     }
-}
 
-.btn{
-    padding: 1rem 3rem;
-    color: white;
-    border-radius: 1.5rem 0 1.5rem 0;
-    background-image: @mainColor;
-}
 
+}
