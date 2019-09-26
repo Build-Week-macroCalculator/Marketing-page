@@ -47,6 +47,9 @@ header{
         h1{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0;
+            @media @tablet{
+                font-size: 3rem;
+            }
         }
     }
     .nav1{
@@ -65,7 +68,7 @@ header{
             width:100%;
             margin-bottom: 3rem;
         }
-        @media @phone{
+        @media @tablet{
             margin: 1.6rem auto;
             background: @mainColor;
             border: none;
@@ -83,7 +86,7 @@ header{
                 padding: 0;
                 color: #333;
             }
-            @media @phone{
+            @media @tablet{
                 color: white;
             }
         }

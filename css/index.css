@@ -255,6 +255,11 @@ header .logo h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0;
 }
+@media (max-width: 800px) {
+  header .logo h1 {
+    font-size: 3rem;
+  }
+}
 header .nav1 {
   width: 33%;
   display: flex;
@@ -274,7 +279,7 @@ header .nav1 {
     margin-bottom: 3rem;
   }
 }
-@media (max-width:500px) {
+@media (max-width: 800px) {
   header .nav1 {
     margin: 1.6rem auto;
     background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
@@ -297,7 +302,7 @@ header .nav1 a:hover {
     color: #333;
   }
 }
-@media (max-width:500px) {
+@media (max-width: 800px) {
   header .nav1 a {
     color: white;
   }
@@ -355,8 +360,15 @@ footer {
     text-align: center;
   }
 }
+footer h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a,
+footer p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 footer .footerabout {
-  width: 30%;
+  width: 40%;
   padding: 3.2rem;
 }
 @media (max-width: 1180px) {
@@ -387,6 +399,7 @@ footer .footerabout .abouticons {
 footer .footerabout .abouticons i {
   color: white;
   padding-right: 3rem;
+  font-size: 3rem;
 }
 @media (max-width: 1180px) {
   footer .footerabout .abouticons i {
@@ -397,22 +410,25 @@ footer .footernav {
   display: flex;
   flex-direction: column;
   width: 10%;
-  padding: 3.2rem 0;
+  padding-top: 4rem;
   text-align: center;
 }
 @media (max-width: 1180px) {
   footer .footernav {
     width: 40%;
+    padding-top: 2rem;
   }
 }
 @media (max-width:500px) {
   footer .footernav {
     width: 80%;
+    padding-top: 0;
   }
 }
 footer .footernav h2 {
-  font-size: 3.2rem;
+  font-size: 1.7rem;
   line-height: 1.5;
+  font-weight: 600;
   color: white;
 }
 footer .footernav a {
@@ -427,12 +443,13 @@ footer .footerlegal {
   display: flex;
   flex-direction: column;
   width: 10%;
-  padding: 3.2rem 0;
   text-align: center;
+  padding-top: 4rem;
 }
 @media (max-width: 1180px) {
   footer .footerlegal {
     width: 40%;
+    padding-top: 2rem;
   }
 }
 @media (max-width:500px) {
@@ -441,8 +458,9 @@ footer .footerlegal {
   }
 }
 footer .footerlegal h2 {
-  font-size: 3.2rem;
+  font-size: 1.7rem;
   line-height: 1.5;
+  font-weight: 600;
   color: white;
 }
 footer .footerlegal a {
@@ -456,9 +474,10 @@ footer .footerlegal a:hover {
 }
 footer .footersignup {
   display: flex;
+  width: 40%;
   flex-direction: column;
   padding: 3.2rem;
-  align-items: flex-end;
+  align-items: center;
 }
 @media (max-width: 1180px) {
   footer .footersignup {
@@ -480,7 +499,7 @@ footer .footersignup form {
   width: 100%;
   margin-top: 1.6rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 @media (max-width: 1180px) {
   footer .footersignup form {
