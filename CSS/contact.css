@@ -385,7 +385,9 @@ footer .footersignup p {
   text-align: start;
   max-height: 0;
   overflow: hidden;
+  font-size: 1.8rem;
   transition: 0.35s ease-in-out;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .container2 .accordion-content {

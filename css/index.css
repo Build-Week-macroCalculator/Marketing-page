@@ -233,6 +233,7 @@ header .logo {
   color: #333;
   font-size: 1.6rem;
   justify-content: flex-start;
+  text-decoration: none;
 }
 @media (max-width: 1180px) {
   header .logo {
