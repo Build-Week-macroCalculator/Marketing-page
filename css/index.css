@@ -371,6 +371,7 @@ footer p {
 footer .footerabout {
   width: 40%;
   padding: 3.2rem;
+  text-align: center;
 }
 @media (max-width: 1180px) {
   footer .footerabout {
@@ -389,7 +390,7 @@ footer .footerabout p {
 footer .footerabout .abouticons {
   font-size: 3.2rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   padding-top: 1.6rem;
 }
 @media (max-width: 1180px) {
@@ -399,7 +400,7 @@ footer .footerabout .abouticons {
 }
 footer .footerabout .abouticons i {
   color: white;
-  padding-right: 3rem;
+  padding: 0 2rem;
   font-size: 3rem;
 }
 @media (max-width: 1180px) {
