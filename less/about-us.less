@@ -33,7 +33,7 @@
     .card {
         display: flex;
         align-content: center;
-        max-width: 600px;
+        width: 45%;
         margin: 1em 1em;
         background: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
         color: midnightblue;
@@ -52,15 +52,16 @@
             }
         }
         @media @bigtablet {
-            max-width: 100%;
+            width: 100%;
             
         }
         @media @tablet {
-            flex-direction: column;
+            width: 100%;
             
         }
         @media @phone {
-            align-items: center;
+            //flex-direction: column;
+            //align-items: center;
         }
     }
 

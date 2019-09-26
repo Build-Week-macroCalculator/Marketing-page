@@ -705,7 +705,7 @@ footer .footersignup p {
 .about-us .card {
   display: flex;
   align-content: center;
-  max-width: 600px;
+  width: 45%;
   margin: 1em 1em;
   background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
   color: midnightblue;
@@ -726,16 +726,13 @@ footer .footersignup p {
 }
 @media (max-width: 1180px) {
   .about-us .card {
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
   .about-us .card {
-    flex-direction: column;
+    width: 100%;
   }
 }
 @media (max-width:500px) {
-  .about-us .card {
-    align-items: center;
-  }
 }
