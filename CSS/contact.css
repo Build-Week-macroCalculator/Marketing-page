@@ -156,6 +156,13 @@ footer {
     text-align: center;
   }
 }
+footer h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a,
+footer p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 footer .footerabout {
   width: 40%;
   padding: 3.2rem;
