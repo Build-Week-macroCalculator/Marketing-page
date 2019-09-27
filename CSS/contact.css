@@ -397,6 +397,10 @@ footer .footersignup p {
 }
 .container2 .accordion-content p {
   padding: 0 1.6rem;
+  color: black;
+}
+.container2 .accordion-content p a {
+  font-weight: 600;
 }
 .contact-section {
   display: flex;
